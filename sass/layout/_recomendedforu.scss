@@ -1,0 +1,155 @@
+.recomendedforu {
+  width: 100%;
+  height: 703px;
+  background-color: rgb(136, 54, 40);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recomendedforu-title {
+  font-family: Karantina;
+  font-weight: 400;
+  font-size: 64px;
+  height: 59px;
+  margin-bottom: 38px;
+  color: rgb(255, 255, 255);
+}
+
+.recomendedforu-list {
+  display: flex;
+  column-gap: 79px;
+  padding-bottom: 105px;
+}
+
+.recomendedforu-img {
+  transition: border-color ease 0.5s;
+}
+
+.recomendedforu-item:first-child:hover > .recomendedforu-img {
+  border-color: rgb(233, 219, 182);
+}
+
+.recomendedforu-item:nth-child(2):hover > .recomendedforu-img {
+  border-color: rgb(46, 46, 46);
+}
+
+.recomendedforu-item:nth-child(3):hover > .recomendedforu-img {
+  border-color: rgb(244, 111, 34);
+}
+
+.recomendedforu-item:nth-child(4):hover > .recomendedforu-img {
+  border-color: rgb(213, 234, 235);
+}
+
+.recomendedforu-item {
+}
+
+.recomendedforu-img {
+  width: 278px;
+  height: 446px;
+  border-radius: 60px;
+
+  border: 13px solid black;
+
+  border-top: 23px solid black;
+  border-bottom: 23px solid black;
+}
+
+// __________________________________________Modal__________________________________________
+
+.backdrop {
+  display: none;
+  position: fixed;
+  animation: fadeIn 1s ease;
+}
+
+.show-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 20;
+}
+
+.modal {
+  flex-direction: column;
+  background-color: #fff;
+  width: 1024px;
+  height: 100vh;
+  display: flex;
+  z-index: 50;
+}
+
+.modal-wrap {
+  display: flex;
+}
+
+.modal-text {
+  font-family: Karantina;
+  width: 651px;
+  font-weight: 400;
+  font-size: 60px;
+  height: 360px;
+  margin-left: 28px;
+}
+
+.modal-button {
+  background-color: #fff;
+  width: 225px;
+  height: 350px;
+}
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+// _________________________________________Western_________________________________________
+
+.westernfront-modal-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.westernfront-modal-item {
+  margin-left: 15px;
+}
+
+// _________________________________________Hobbit_________________________________________
+
+.hobbit_front_wrap_close {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hobbit_front_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hobbit_front_close {
+  margin-right: 22px;
+}
+
+.hobbit-text {
+  width: 909px;
+  margin-left: 0;
+}
+
+// _________________________________________Key-frames_________________________________________
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

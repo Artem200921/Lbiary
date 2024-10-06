@@ -1,0 +1,63 @@
+.hero {
+  width: 100%;
+  height: 372px;
+}
+.hero__wrap {
+  background-image: url(../../img/hero-bg.jpeg);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__content {
+  width: 521px;
+  height: 261px;
+  border-radius: 31px;
+  background: rgb(239, 230, 230);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 35px;
+  position: relative;
+}
+.hero__input {
+  border-radius: 18.5px;
+  background: rgb(196, 196, 196);
+  width: 441px;
+  height: 45px;
+  padding-left: 35px;
+}
+.hero__input--second {
+  margin-top: 50px;
+  width: 374px;
+  height: 45px;
+}
+
+.hero__submit {
+  margin-top: 10px;
+  width: 49px;
+  height: 48px;
+  border-radius: 100%;
+}
+
+.hero__submit:hover {
+  cursor: pointer;
+}
+
+.hero__input::placeholder {
+  color: rgb(0, 0, 0);
+  font-family: Jockey One;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.r4you_img{
+  border-radius: 40px;
+  height: 250px;
+  width: 174px;
+}
+
+
+
+

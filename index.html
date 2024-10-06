@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Karantina:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.min.css" />
+  </head>
+  <body>
+    <!--                                 HEADER                                 -->
+
+    <header class="header">
+      <div class="header__wrap" id="header">
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#header" class="nav__link">Header</a>
+            </li>
+            <li class="nav__item">
+              <a href="#hero" class="nav__link">Hero</a>
+            </li>
+            <li class="nav__item">
+              <a href="#recomendedforu" class="nav__link">Books</a>
+            </li>
+            <li class="nav__item">
+              <a href="#authors" class="nav__link">Authors</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="index.html" class="header__logo"
+          ><img src="img/logo.png" alt="logo" width="95px" height="63px"
+        /></a>
+      </div>
+    </header>
+
+    <!--                                 HERO                                 -->
+
+    <section class="hero" id="hero">
+      <div class="hero__wrap">
+        <form action="" class="hero__content">
+          <input
+            type="text"
+            class="hero__input"
+            placeholder="Book Name"
+            id="input"
+          />
+          <input
+            type="text"
+            class="hero__input hero__input--second"
+            id="input-second"
+            placeholder="Author"
+          />
+          <div class="overlay" id="overlay">
+            <ul class="overlay__list">
+              <li class="overlay__item" id="j">
+                <a href="#authors" class="overlay__link"
+                  ><img src="img/jkrowling.jpeg" alt=""
+                /></a>
+              </li>
+              <li class="overlay__item" id="s">
+                <a href="#authors" class="overlay__link"
+                  ><img src="img/steven_king.jpeg" alt=""
+                /></a>
+              </li>
+
+              <li class="overlay__item" id="western_front_modal_open">
+                <img
+                  src="img/western_front.jpeg"
+                  alt=""
+                  class=""
+                  id="western_front"
+                />
+              </li>
+              <li class="overlay__item" id="hobbit_modal_open">
+                <img src="img/hobbit.jpeg" alt="" class="r4you_img" />
+              </li>
+              <li class="overlay__item" id="sherlock_modal_open">
+                <img src="img/sherlock_book.jpeg" alt="" class="r4you_img" />
+              </li>
+              <li class="overlay__item" id="xmas_carol_modal_open">
+                <img src="img/xmas-carol.jpeg" alt="" class="r4you_img" />
+              </li>
+            </ul>
+          </div>
+          <button class="hero__submit" type="button">
+            <img src="img/loupe.png" alt="loupe" />
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!--                                 RECOMENDEDFORU                                 -->
+
+    <section class="recomendedforu" id="recomendedforu">
+      <h2 class="recomendedforu-title">RECOMMENDED FOR YOU</h2>
+      <ul class="recomendedforu-list">
+        <li
+          class="modal-open recomendedforu-item"
+          id="western_front_modal_open"
+        >
+          <img
+            src="img/western_front.jpeg"
+            alt=""
+            class="recomendedforu-img"
+            id="western_modal"
+          />
+        </li>
+        <li class="modal-open recomendedforu-item" id="hobbit_modal_open">
+          <img
+            src="img/hobbit.jpeg"
+            alt=""
+            class="recomendedforu-img"
+            id="hobbit_modal"
+          />
+        </li>
+        <li class="modal-open recomendedforu-item" id="sherlock_modal_open">
+          <img
+            src="img/sherlock_book.jpeg"
+            alt=""
+            class="recomendedforu-img"
+            id="sherlock_modal"
+          />
+        </li>
+        <li class="modal-open recomendedforu-item" id="xmas_carol_modal_open">
+          <img
+            src="img/xmas-carol.jpeg"
+            alt=""
+            class="recomendedforu-img"
+            id="xmas_modal"
+          />
+        </li>
+      </ul>
+    </section>
+
+    <div class="backdrop western_front_backdrop">
+  <div class="modal western_front_modal">
+    <div class="modal-wrap">
+      <button type="button" class="modal-button western_front_close">
+        <img
+          src="img/western_front.jpeg"
+          alt=""
+          class="westernfront-book-modal-image"
+          width="225px"
+          height="350px"
+        />
+      </button>
+      <p class="modal-text westernfront-text">
+        All Quiet on the Western Front tells the story of a group of young
+        Germans who enlist in World War I after being captivated by slogans
+        of patriotism and honour. It is narrated by the protagonist, Paul
+        Baumer, who is 20 years old.
+      </p>
+    </div>
+    <ul class="modal-list westernfront-modal-list">
+      <li class="modal-item westernfront-modal-item">
+        <img
+          src="img/ww1_soldiers.jpeg"
+          alt=""
+          width="200px"
+          height="340px"
+        />
+      </li>
+      <li class="modal-item">
+        <img
+          src="img/ww1_british_soldier.jpeg"
+          alt=""
+          width="200px"
+          height="340px"
+        />
+      </li>
+      <li class="modal-item">
+        <img
+          src="img/ww1_soldier.jpeg"
+          alt=""
+          width="250px"
+          height="340px"
+        />
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="backdrop hobbit_front_backdrop">
+  <div class="modal hobbit_front_modal">
+    <div class="modal-wrap hobbit_front_wrap">
+      <p class="modal-text hobbit-text">
+        The Hobbit is set in Middle-earth and follows home-loving Bilbo
+        Baggins, the hobbit of the title, who joins the wizard Gandalf and
+        the thirteen dwarves of Thorin's Company, on a quest to reclaim the
+        dwarves' home and treasure from the dragon Smaug.
+      </p>
+      <div class="hobbit_front_wrap_close">
+        <button type="button" class="modal-button hobbit_front_close">
+          <img
+            src="img/hobbit.jpeg"
+            alt=""
+            class="hobbit-book-modal-image"
+            width="225px"
+            height="350px"
+          />
+        </button>
+        <ul class="modal-list hobbit-modal-list">
+          <li class="modal-item hobbit-modal-item">
+            <img
+              src="img/hobbit_house.jpeg"
+              alt=""
+              width="427px"
+              height="377px"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="backdrop sherlock_front_backdrop">
+      <div class="modal sherlock_front_modal">
+        <div class="modal-wrap sherlock_front_wrap">
+          <p class="modal-text sherlock-text">
+            Sherlock Holmes is a fictional detective created by Sir Arthur Conan
+            Doyle. Holmes is known for his sharp observation, deductive
+            reasoning, and forensic science skills
+          </p>
+          <div class="sherlock_front_wrap_close">
+            <button type="button" class="modal-button sherlock_front_close">
+              <img
+                src="img/sherlock_book.jpeg"
+                alt=""
+                class="sherlock-book-modal-image"
+                width="225px"
+                height="350px"
+              />
+            </button>
+
+            <ul class="modal-list hobbit-modal-list">
+              <li class="modal-item hobbit-modal-item">
+                <img
+                  src="img/sherlock_looking_left.jpeg"
+                  alt=""
+                  width="427px"
+                  height="377px"
+                />
+              </li>
+
+              <li class="modal-item hobbit-modal-item">
+                <img
+                  src="img/sherlock_looking_right.jpeg"
+                  alt=""
+                  width="427px"
+                  height="377px"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="backdrop xmas_front_backdrop">
+      <div class="modal xmas_front_modal">
+        <div class="modal-wrap xmas_front_wrap">
+          <p class="modal-text xmas-text">
+            The Hobbit is set in Middle-earth and follows home-loving Bilbo
+            Baggins, the hobbit of the title, who joins the wizard Gandalf and
+            the thirteen dwarves of Thorin's Company, on a quest to reclaim the
+            dwarves' home and treasure from the dragon Smaug.
+          </p>
+          <div class="xmas_front_wrap_close">
+            <button type="button" class="modal-button xmas_front_close">
+              <img
+                src="img/xmas-carol.jpeg"
+                alt=""
+                class="hobbit-book-modal-image"
+                width="225px"
+                height="350px"
+              />
+            </button>
+
+            <ul class="modal-list xams-modal-list">
+              <li class="modal-item xmas-modal-item">
+                <img
+                  src="img/winter.jpeg"
+                  alt=""
+                  width="427px"
+                  height="377px"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--                                 AUTHORS                                 -->
+
+    <section class="authors" id="authors">
+      <h2 class="authors_title">AUTHORS</h2>
+      <ul class="authors_list">
+        <li class="authors_item jk_item">
+          <div class="jkrowling_focus_div">
+            <img
+              src="img/jkrowling.jpeg"
+              alt=""
+              class="jkrowling_image"
+              width="400px"
+              height="600px"
+            />
+
+            <div class="position_jkrowling_div">
+              <h4 class="authors_titles">J.K. Rowling</h4>
+              <img
+                src="img/uk_flag.jpeg"
+                alt=""
+                class="ukflag_image"
+                width="124px"
+                height="65px"
+              />
+            </div>
+          </div>
+          <ul class="authors_book_list jkrowling_booklist">
+            <li class="authors_book_item">
+              <img src="img/philosophers_stone.jpeg" alt="" />
+            </li>
+            <li class="authors_book_item">
+              <img src="img/azkaban_prisoner.jpeg" alt="" />
+            </li>
+            <li class="authors_book_item">
+              <img src="img/deathly_hallows_book.jpeg" alt="" />
+            </li>
+            <li class="authors_book_item">
+              <img src="img/half_blood_prince.jpeg" alt="" />
+            </li>
+          </ul>
+        </li>
+
+        <li class="authors_item sk_item">
+          <div class="sk_focus_div">
+            <img
+              src="img/steven_king.jpeg"
+              alt=""
+              class="stevenking_image"
+              width="400px"
+              height="600px"
+            />
+            <div class="position_stevenking_div">
+              <h4 class="authors_titles">Stephen King</h4>
+              <img
+                src="img/us_flag.jpeg"
+                alt=""
+                class="usflag_image"
+                width="124px"
+                height="65px"
+              />
+            </div>
+          </div>
+          <ul class="authors_book_list steven_king_booklist">
+            <li class="authors_book_item"><img src="img/it.jpeg" alt="" /></li>
+            <li class="authors_book_item">
+              <img src="img/the_shining.jpeg" alt="" />
+            </li>
+            <li class="authors_book_item">
+              <img src="img/pet_sematary_book.jpeg" alt="" />
+            </li>
+            <li class="authors_book_item">
+              <img src="img/the_green_mile.jpeg" alt="" />
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!--                                 FOOTER                                 -->
+
+    <footer class="footer">
+      <div class="footer__wrap" id="footer">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#header" class="footer__link">Header</a>
+          </li>
+          <li class="footer__item">
+            <a href="#hero" class="footer__link">Hero</a>
+          </li>
+          <li class="footer__item">
+            <a href="#recomendedforu" class="footer__link">Books</a>
+          </li>
+          <li class="footer__item">
+            <a href="#authors" class="footer__link">Authors</a>
+          </li>
+        </ul>
+        <a href="index.html" class="footer__logo"
+          ><img src="img/logo.png" alt="logo" width="95px" height="63px"
+        /></a>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

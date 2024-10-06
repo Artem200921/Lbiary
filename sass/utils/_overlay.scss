@@ -1,0 +1,38 @@
+.overlay {
+  position: absolute;
+  top: -1000px;
+  width: 430px;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: top ease 3s;
+  background-color: rgba(128, 128, 128, 0.8);
+}
+
+.overlay__list {
+  display: flex;
+  column-gap: 5px;
+}
+
+.overlay__item {
+  opacity: 0;
+  display: none;
+  transition: opacity ease 1s;
+  transition-delay: 0.7s;
+}
+
+.overlay__item.active {
+  display: flex;
+  opacity: 1;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
